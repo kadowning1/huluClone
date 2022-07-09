@@ -1,7 +1,11 @@
-import React from 'react'
+import Thumbnail from './Thumbnail';
 
-export default function Results() {
+export default function Results({ results }) {
   return (
-    <div>Results</div>
-  )
+    <div>
+      {results.map((result) => {
+        return <Thumbnail key={result.id} result={result} />;
+      })}
+    </div>
+  );
 }
