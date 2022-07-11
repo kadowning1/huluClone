@@ -22,6 +22,7 @@ export default function Header() {
       <Image
         className='object-contain'
         src={'https://links.papareact.com/ua6'}
+        alt='Hulu Image'
         width={200}
         height={100}
       />
